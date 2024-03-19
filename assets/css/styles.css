@@ -4,8 +4,11 @@
 
 html {
     font-size: 62.5%;
-}
 
+}
+html , body {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 1.6rem;
     font-family: "Poppins",sans-serif;
@@ -51,10 +54,12 @@ btn:hover{
 /*=============Hero========== */
 .hero-wrap {
     background:#E6F0FF;
-    height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
 }
-.fix-header{
+.fixed-header{
     background: #E6F0FF ;
     padding-top: 26px;
     position: sticky;
@@ -65,7 +70,6 @@ btn:hover{
 .navbar {
     display: flex;
     align-items: center;
-    /* padding-top: 50px; */
     padding: 12px 0;
 }
 
@@ -97,7 +101,7 @@ btn:hover{
 }
 /* Bottom */
 .hero {
-    padding: 130px;
+    padding-top: 130px;
 }
 .hero .info {
     width: 51%;
@@ -134,7 +138,7 @@ btn:hover{
 }
 .hero-img{
     position: absolute;
-    right: calc((100vw - 1110px) /2 - 100px) ;
+    right: calc((100vw - 1110px) /2 - 300px) ;
     bottom: 0;
 }
 /*=============Clients========== */
