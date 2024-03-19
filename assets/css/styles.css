@@ -588,7 +588,14 @@ btn:hover{
     width: 28px;
     height: 28px;
     border-radius: 3px;
+    background: #F9F9F9;
+    
 }
+
+.footer .social-link + .social-link {
+    margin-left: 16px
+}
+
 .footer .social-link:hover{
     background-color: #e6e4e4;
 }
@@ -602,4 +609,5 @@ btn:hover{
     width: 400;
     font-size: 1.4rem;
     color: #C2C2C2;
+
 }
